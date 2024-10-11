@@ -153,7 +153,7 @@ const EcosystemMap = () => {
 
 			<div className='bg-white lg:p-8 md:p-6 p-4  rounded-xl w-full mx-auto'>
 				<div className='text-center'>
-					<Image src={logo} alt='logo' className='mx-auto w-[30%] lg:w-full'  />
+					<Image src={logo} alt='logo' className='mx-auto w-[30%] md:w-[20%] lg:w-[15%]'  />
 					<h2 className='lg:text-[70px] md:text-[50px] text-[28px] font-extrabold font-agrandir text-[#0163F5]'>
 						ECOSYSTEM{" "}
 						<span className='lg:text-[62px] md:text-[40px] text-[24px] leading-[250%] font-light font-agrandir text-black'>
