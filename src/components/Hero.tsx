@@ -57,7 +57,7 @@ const EcosystemCard = ({
 				<>
 					{logo && (
 						<div className='flex items-baseline gap-1'>
-							<Image src={logo} alt='logo'  className="w-[40%] md:w-full"/>
+							<Image src={logo} alt='logo'  className="w-[40%] md:w-[50%]  lg:w-auto"/>
 							<h1 className='font-semibold text-white lg:text-[32px] '>
 								{logodesc}
 							</h1>
