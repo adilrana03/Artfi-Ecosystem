@@ -30,13 +30,16 @@ const EcosystemCard = ({
 	logodesc,
 	isLastCard,
 }: any) => (
-	<div className='relative bg-black md:rounded-[20px] rounded-[12px] overflow-hidden shadow-md lg:w-[325px] md:w-[250px]  lg:h-[266px] md:h-[177px] w-[250px] h-[120px] mx-auto'>
+	<div
+		className={`relative ${title == "Artfi Share" ? "bg-[#D7D0C4]" : "bg-black"} md:rounded-[20px] rounded-[12px] overflow-hidden shadow-md lg:w-[100%] 3xl:w-full  md:w-[250px]  lg:h-[30vh] 3xl:h-[33vh] md:h-[177px] w-[250px] h-[120px] mx-auto`}>
 		<Image
 			src={imageSrc}
 			alt={title}
 			layout='fill'
 			objectFit='cover'
-			className='z-0'
+			className={`z-0 ${
+				title == "Artfi Share" ? "hidden md:block " : ""
+			}`}
 		/>
 		<div className='relative z-10 md:p-6 p-4 h-full flex flex-col justify-en'>
 			{isLastCard ? (
@@ -45,11 +48,9 @@ const EcosystemCard = ({
 						<Image src={logo} alt='logo' className='' />
 
 						<div className='flex items-center  justify-between'>
-						
 							<svg
-							className="lg:w-[70px] md:w-[60px] lg:h-[44px] md:h-[35px] w-[40px] h-[25px]"
+								className='lg:w-[70px] md:w-[60px] lg:h-[44px] md:h-[35px] w-[40px] h-[25px]'
 								xmlns='http://www.w3.org/2000/svg'
-								
 								viewBox='0 0 70 44'
 								fill='none'>
 								<path
@@ -98,7 +99,6 @@ const EcosystemCard = ({
 					<p className='text-white lg:text-[16px] text-[10px] font-light'>
 						{description}
 					</p>
-					{/* <p></p> */}
 					<div className='mt-4 hidden md:block '>
 						<Image src={masterCard} alt={logo} />
 					</div>
@@ -106,7 +106,10 @@ const EcosystemCard = ({
 			) : (
 				<>
 					{logo && (
-						<div className='flex items-baseline gap-1'>
+						<div
+							className={`flex items-baseline gap-1 ${
+								title == "Artfi Share" ? "#D7D0C4" : ""
+							}`}>
 							<Image
 								src={logo}
 								alt='logo'
@@ -114,7 +117,7 @@ const EcosystemCard = ({
 									title == "Artfi Token"
 										? "w-[30%]"
 										: "w-[40%]"
-								}`}
+								}  `}
 							/>
 							<h1 className='font-semibold text-white lg:text-[32px] '>
 								{logodesc}
@@ -122,7 +125,7 @@ const EcosystemCard = ({
 						</div>
 					)}
 					<p
-						className={` lg:text-[16px] text-[10px] font-agrandir pr-12 mt-6 ${
+						className={` lg:text-[16px] text-[10px] font-agrandir pr-12 md:pr-0 mt-6  ${
 							title == "Artfi Share" ? "text-black" : "text-white"
 						}`}>
 						{description}
@@ -130,7 +133,7 @@ const EcosystemCard = ({
 				</>
 			)}
 		</div>
-		<div className='absolute bottom-2 right-2 bg-whit rounded-full p-2 shadow-md'>
+		<div className='absolute bottom-2 right-2 bg-whit rounded-full p-2 shadow-m'>
 			<svg
 				className='bg-white rounded-full h-12 w-12 p-3'
 				xmlns='http://www.w3.org/2000/svg'
@@ -217,7 +220,7 @@ const EcosystemMap = () => {
 					<Image
 						src={logo}
 						alt='logo'
-						className='mx-auto w-[30%] md:w-[20%] lg:w-[15%]'
+						className='mx-auto w-[30%] md:w-[20%] lg:w-[15%] '
 					/>
 					<h2 className='lg:text-[70px] md:text-[50px] text-[28px] font-extrabold font-agrandir text-[#0163F5]'>
 						ECOSYSTEM{" "}
