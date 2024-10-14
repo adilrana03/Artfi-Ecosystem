@@ -20,6 +20,7 @@ import tokenLogo from "../assets/Artfi Logo (2).svg";
 import discord from '../assets/discord.svg'
 import telegram from "../assets/telegram.svg";
 import twitter from "../assets/twitter.svg";
+import share from '../assets/share.svg'
 
 const EcosystemCard = ({
 	title,
@@ -57,13 +58,20 @@ const EcosystemCard = ({
 				<>
 					{logo && (
 						<div className='flex items-baseline gap-1'>
-							<Image src={logo} alt='logo'  className="w-[40%] md:w-[50%]  lg:w-auto"/>
+							<Image
+								src={logo}
+								alt='logo'
+								className='w-[40%] md:w-[50%]  lg:w-auto'
+							/>
 							<h1 className='font-semibold text-white lg:text-[32px] '>
 								{logodesc}
 							</h1>
 						</div>
 					)}
-					<p className='text-white lg:text-[16px] text-[10px] font-agrandir pr-12 my-auto'>
+					<p
+						className={` lg:text-[16px] text-[10px] font-agrandir pr-12 mt-6 ${
+							title == "Artfi Share"?'text-black' : 'text-white' 
+						}`}>
 						{description}
 					</p>
 				</>
@@ -95,7 +103,7 @@ const EcosystemMap = () => {
 		{
 			title: "Artfi Share",
 			description: "Own shares in Masterpieces on the Blockchain!",
-			imageSrc: artfiShare,
+			imageSrc: share,
 			logo: sharelogo,
 		},
 		{
@@ -162,7 +170,7 @@ const EcosystemMap = () => {
 					</h2>
 				</div>
 
-				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:w-[80%] lg:w-full md:mx-auto'>
+				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:w-[80%] 3xl:w-[80%] lg:w-full md:mx-auto pb-8 md:pb-0'>
 					{cards.map((card, index) => (
 						<EcosystemCard
 							key={card.title}
