@@ -203,7 +203,7 @@ const EcosystemMap = () => {
 
 	return (
 		<>
-			<div className='md:flex lg:flex-col  absolute lg:right-16 lg:top-12 md:top-16 md:right-10 right-12 top-[90%] hidden'>
+			<div className='lex lex-col  absolute lg:right-16 lg:top-12 md:top-16 md:right-10 right-12 top-[90%] hidden'>
 				<button className='bg-black text-white rounded-full md:w-[25%] lg:w-full'>
 					<Image src={discord} alt='Discord' />
 				</button>
@@ -240,15 +240,30 @@ const EcosystemMap = () => {
 					))}
 				</div>
 
-				<div className='md:hidden mx-auto flex justify-center'>
+				<div className='hidden mx-auto fle justify-center'>
 					<button className='bg-black text-white rounded-full w-[10%] lg:w-full'>
-						<Image src={discord} alt='Discord' />
+						<a
+							href='https://discord.gg/artfiglobal'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<Image src={discord} alt='Discord' />
+						</a>
 					</button>
 					<button className='bg-black text-white rounded-full lg:my-2 w-[10%] lg:w-full mx-4 lg:mx-0'>
-						<Image src={telegram} alt='Telgram' />
+						<a
+							href='http://'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<Image src={telegram} alt='Telgram' />
+						</a>
 					</button>
 					<button className='bg-black text-white rounded-full w-[10%] lg:w-full'>
-						<Image src={twitter} alt='twitter' />
+						<a
+							href='https://x.com/artfiglobal'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<Image src={twitter} alt='twitter' />
+						</a>
 					</button>
 				</div>
 			</div>
