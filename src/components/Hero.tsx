@@ -61,7 +61,11 @@ const EcosystemCard = ({
 							<Image
 								src={logo}
 								alt='logo'
-								className='w-[40%] md:w-[50%]  lg:w-auto'
+								className={` md:w-[50%]  lg:w-auto ${
+									title == "Artfi Token"
+										? "w-[30%]"
+										: "w-[40%]"
+								}`}
 							/>
 							<h1 className='font-semibold text-white lg:text-[32px] '>
 								{logodesc}
@@ -70,7 +74,7 @@ const EcosystemCard = ({
 					)}
 					<p
 						className={` lg:text-[16px] text-[10px] font-agrandir pr-12 mt-6 ${
-							title == "Artfi Share"?'text-black' : 'text-white' 
+							title == "Artfi Share" ? "text-black" : "text-white"
 						}`}>
 						{description}
 					</p>
