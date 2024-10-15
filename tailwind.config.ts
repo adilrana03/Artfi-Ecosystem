@@ -15,7 +15,9 @@ const config: Config = {
       },
       screens: {
         '3xl': '1920px',
-        '5xl': '3280px',
+        '4xl': '2880px',
+        '5xl': '3350px',
+        '4k': '3700px',
       },
        fontFamily: {
         'agrandir': ['Agrandir', 'sans-serif'],

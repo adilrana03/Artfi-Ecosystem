@@ -95,14 +95,16 @@ const EcosystemCard = ({
 							/>
 						</div>
 					</div>
-					<h3 className='text-white xl:text-[30px] md:text-[20px] text-[12px] font-bold lg:mt-2 xl:mt-6 font-irish-grover'>
-						THE ART CARD
-					</h3>
-					<p className='text-white lg:text-[16px] text-[10px] font-light'>
-						{description}
-					</p>
-					<div className='mt-4 hidden md:block 3xl:mt-10 3xl:absolute bottom-8 '>
+					<div className="3xl:absolute bottom-20 ">
+						<h3 className='text-white  xl:text-[30px] md:text-[20px] text-[12px] font-bold lg:mt-2 xl:mt-6 font-irish-grover 3xl:text-[22px] 3xl:mt-[10%] 4k:text-[50px] 4xl:text-[30px]'>
+							THE ART CARD
+						</h3>
+						<p className='text-white lg:text-[16px] text-[10px] font-light'>
+							{description}
+						</p>
+					<div className='mt-4 xl:mt-4 lg:mt-2 hidden md:block  '>
 						<Image src={masterCard} alt={logo} />
+					</div>
 					</div>
 				</>
 			) : (
@@ -115,7 +117,7 @@ const EcosystemCard = ({
 							<Image
 								src={logo}
 								alt='logo'
-								className={` md:w-[50%]  lg:w-auto ${
+								className={` md:w-[50%]  lg:w-auto 3xl:w-[50%] 3xl:m-4 ${
 									title == "Artfi Token"
 										? "w-[30%]"
 										: "w-[40%]"
@@ -127,7 +129,7 @@ const EcosystemCard = ({
 						</div>
 					)}
 					<p
-						className={` lg:text-[12px] xl:text-[16px]  text-[10px] font-agrandir pr-12 md:pr-0 mt-6 lg:mt-3 xl:mt-5  3xl:text-[22px] 3xl:mt-10   ${
+						className={` lg:text-[12px] xl:text-[16px]  text-[10px] font-agrandir pr-12 md:pr-0 mt-6 lg:mt-3 xl:mt-5  3xl:text-[22px] 3xl:mt-[10%] 4k:text-[50px] 4xl:text-[30px]   ${
 							title == "Artfi Share" ? "text-black" : "text-white"
 						}`}>
 						{description}
