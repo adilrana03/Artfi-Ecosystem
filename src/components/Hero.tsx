@@ -9,7 +9,7 @@ import marketPlace from "../assets/image 42.png";
 import foundation from "../assets/image 44.png";
 import artinals from "../assets/Artinals.svg";
 import connect from "../assets/image 39.png";
-import logo from "../assets/ArtfiLogo.svg";
+import logo from "../assets/Artfi Logo (3).svg";
 import artinallogo from "../assets/ArtinalsLogo.svg";
 import sharelogo from "../assets/Artfishare.svg";
 import curatedlogo from "../assets/Curated.svg";
@@ -33,7 +33,7 @@ const EcosystemCard = ({
 	<div
 		className={`relative ${
 			title == "Artfi Share" ? "bg-[#D7D0C4]" : "bg-black"
-		} md:rounded-[20px] rounded-[12px] overflow-hidden shadow-md lg:w-[100%] 3xl:w-full  md:w-[250px]  lg:h-[30vh] 3xl:h-[30vh] md:h-[177px] w-[250px] h-[120px] mx-auto`}>
+		} md:rounded-[20px] rounded-[12px] overflow-hidden shadow-md lg:w-[100%] 3xl:w-full  md:w-[250px]  lg:h-[25vh] xl:h-[30vh] 3xl:h-[33vh] md:h-[177px] w-[250px] h-[120px] mx-auto`}>
 		<Image
 			src={imageSrc}
 			alt={title}
@@ -95,7 +95,7 @@ const EcosystemCard = ({
 							/>
 						</div>
 					</div>
-					<h3 className='text-white lg:text-[30px] md:text-[20px] text-[12px] font-bold lg:mt-8 font-irish-grover'>
+					<h3 className='text-white xl:text-[30px] md:text-[20px] text-[12px] font-bold lg:mt-2 xl:mt-6 font-irish-grover'>
 						THE ART CARD
 					</h3>
 					<p className='text-white lg:text-[16px] text-[10px] font-light'>
@@ -127,7 +127,7 @@ const EcosystemCard = ({
 						</div>
 					)}
 					<p
-						className={` lg:text-[16px] text-[10px] font-agrandir pr-12 md:pr-0 mt-6 3xl:text-[22px] 3xl:mt-10  ${
+						className={` lg:text-[12px] xl:text-[16px]  text-[10px] font-agrandir pr-12 md:pr-0 mt-6 lg:mt-3 xl:mt-5  3xl:text-[22px] 3xl:mt-10  ${
 							title == "Artfi Share" ? "text-black" : "text-white"
 						}`}>
 						{description}
@@ -232,7 +232,7 @@ const EcosystemMap = () => {
 					</h2>
 				</div>
 
-				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:w-[80%] 3xl:w-[80%] lg:w-full md:mx-auto pb-8 md:pb-0'>
+				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:-[70% md:w-[500px] 3xl:w-[80%] lg:w-full md:mx-auto pb-8 md:pb-0'>
 					{cards.map((card, index) => (
 						<EcosystemCard
 							key={card.title}
@@ -274,144 +274,3 @@ const EcosystemMap = () => {
 };
 
 export default EcosystemMap;
-// import React from "react";
-// import Image from "next/image";
-// import { Send, Twitter } from "lucide-react";
-// import img1 from "../assets/60c3cea8-6e7d-4720-b728-ef51716b992c_6854 2.png";
-// // import card from "../assets/image 19.png";
-// import artficurated from "../assets/image 25 (1).png";
-// import artfiShare from "../assets/image 31 (1).png";
-// import token from "../assets/image.png";
-// import marketPlace from "../assets/image 42.png";
-// import foundation from "../assets/image 44.png";
-// import artinals from "../assets/Artinals.svg";
-// import connect from "../assets/image 39.png";
-// import logo from "../assets/ArtfiLogo.svg";
-// import artinallogo from "../assets/ArtinalsLogo.svg";
-// import sharelogo from "../assets/Artfishare.svg";
-// import curatedlogo from "../assets/Curated.svg";
-// import marketplacelogo from "../assets/Artfimarketplace.svg";
-// import connectLogo from "../assets/ArtfiConnect.svg";
-// import foundationLogo from "../assets/ArtfiFoundation.svg";
-// import tokenLogo from "../assets/Artfi Logo (2).svg";
-
-// const EcosystemCard = ({
-// 	title,
-// 	description,
-// 	imageSrc,
-// 	logo,
-// 	logodesc,
-// }: any) => (
-// 	<div className='relative bg-black rounded-[20px] overflow-hidden shadow-md lg:w-[325px] lg:h-[266px]'>
-// 		<Image
-// 			src={imageSrc}
-// 			alt={title}
-// 			layout='fill'
-// 			objectFit='cover'
-// 			className='z-0'
-// 		/>
-// 		<div className='relative z-10 p-6  h-full flex flex-col justify-en'>
-// 			{logo && (
-// 				<div className=' flex items-baseline gap-1'>
-// 					<Image src={logo} alt='logo' />
-// 					<h1 className="font-semibol text-white text-[32px]">{logodesc} </h1>
-// 				</div>
-// 			)}
-// 			<p className='text-white text-[16px] font-agrandir pr-12 my-auto '>{description}</p>
-// 		</div>
-// 		<div className='absolute bottom-2 right-2 bg-whit rounded-full p-2 shadow-md'>
-// 			<svg
-// 				xmlns='http://www.w3.org/2000/svg'
-// 				className='h-8 w-8 bg-white rounded-full p-1'
-// 				viewBox='0 0 20 20'
-// 				fill='black'>
-// 				<path
-// 					fillRule='evenodd'
-// 					d='M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z'
-// 					clipRule='evenodd'
-// 				/>
-// 			</svg>
-// 		</div>
-// 	</div>
-// );
-
-// const EcosystemMap = () => {
-// 	return (
-// 		<div className='bg-white p-8 rounded-xl w-full  mx-auto  '>
-// 			<div className='text-center '>
-// 				<Image src={logo} alt='logo' className='mx-auto' />
-// 				<h2 className='lg:text-[70px] md:text-[50px] text-[28px] font-extrabold font-agrandir text-[#0163F5]  '>
-// 					ECOSYSTEM{" "}
-// 					<span className='lg:text-[62px] md:text-[40px] text-[24px] leading-[250%] font-light font-agrandir text-black'>
-// 						Map
-// 					</span>
-// 				</h2>
-// 			</div>
-
-// 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 '>
-// 				<EcosystemCard
-// 					title='Artinals'
-// 					description='Dynamic protocol built on Sui Network'
-// 					imageSrc={artinals}
-// 					logo={artinallogo}
-// 				/>
-// 				<EcosystemCard
-// 					title='Artfi Share'
-// 					description='Own shares in Masterpieces on the Blockchain!'
-// 					imageSrc={artfiShare}
-// 					logo={sharelogo}
-// 				/>
-// 				<EcosystemCard
-// 					title='Curated'
-// 					description='Modern & Contemporary Fine Art Auction!'
-// 					imageSrc={artficurated}
-// 					logo={curatedlogo}
-// 				/>
-// 				<EcosystemCard
-// 					title='Marketplace'
-// 					description='Trade your art share exclusively on Artfi Market!'
-// 					imageSrc={marketPlace}
-// 					logo={marketplacelogo}
-// 				/>
-// 				<EcosystemCard
-// 					title='Artfi connect'
-// 					description='Connecting the Art-world through Blockchain!'
-// 					imageSrc={connect}
-// 					logo={connectLogo}
-// 				/>
-// 				<EcosystemCard
-// 					title='Artfi Foundation'
-// 					description='Custodian for Artfi Share!'
-// 					imageSrc={foundation}
-// 					logo={foundationLogo}
-// 				/>
-// 				<EcosystemCard
-// 					title='Artfi Token'
-// 					logodesc='Token'
-// 					description=''
-// 					imageSrc={token}
-// 					logo={tokenLogo}
-// 				/>
-// 				<EcosystemCard
-// 					title='THE ART CARD'
-// 					description='by Mobilum Pay'
-// 					imageSrc={img1}
-// 					logo={tokenLogo}
-// 				/>
-// 			</div>
-
-// <div className='flex justify-end space-x-4 mt-'>
-// 	<button className='p-2 bg-black text-white rounded-full'>
-// 	</button>
-// 	<button className='p-2 bg-black text-white rounded-full'>
-// 		<Send size={24} />
-// 	</button>
-// 	<button className='p-2 bg-black text-white rounded-full'>
-// 		<Twitter size={24} />
-// 	</button>
-// </div>
-// 		</div>
-// 	);
-// };
-
-// export default EcosystemMap;
