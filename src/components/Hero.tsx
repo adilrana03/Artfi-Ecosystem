@@ -31,7 +31,9 @@ const EcosystemCard = ({
 	isLastCard,
 }: any) => (
 	<div
-		className={`relative ${title == "Artfi Share" ? "bg-[#D7D0C4]" : "bg-black"} md:rounded-[20px] rounded-[12px] overflow-hidden shadow-md lg:w-[100%] 3xl:w-full  md:w-[250px]  lg:h-[30vh] 3xl:h-[33vh] md:h-[177px] w-[250px] h-[120px] mx-auto`}>
+		className={`relative ${
+			title == "Artfi Share" ? "bg-[#D7D0C4]" : "bg-black"
+		} md:rounded-[20px] rounded-[12px] overflow-hidden shadow-md lg:w-[100%] 3xl:w-full  md:w-[250px]  lg:h-[30vh] 3xl:h-[30vh] md:h-[177px] w-[250px] h-[120px] mx-auto`}>
 		<Image
 			src={imageSrc}
 			alt={title}
@@ -99,7 +101,7 @@ const EcosystemCard = ({
 					<p className='text-white lg:text-[16px] text-[10px] font-light'>
 						{description}
 					</p>
-					<div className='mt-4 hidden md:block '>
+					<div className='mt-4 hidden md:block 3xl:mt-10 3xl:absolute bottom-8 '>
 						<Image src={masterCard} alt={logo} />
 					</div>
 				</>
@@ -125,7 +127,7 @@ const EcosystemCard = ({
 						</div>
 					)}
 					<p
-						className={` lg:text-[16px] text-[10px] font-agrandir pr-12 md:pr-0 mt-6  ${
+						className={` lg:text-[16px] text-[10px] font-agrandir pr-12 md:pr-0 mt-6 3xl:text-[22px] 3xl:mt-10  ${
 							title == "Artfi Share" ? "text-black" : "text-white"
 						}`}>
 						{description}
