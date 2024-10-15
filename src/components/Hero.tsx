@@ -33,7 +33,7 @@ const EcosystemCard = ({
 	<div
 		className={`relative ${
 			title == "Artfi Share" ? "bg-[#D7D0C4]" : "bg-black"
-		} md:rounded-[20px] rounded-[12px] overflow-hidden shadow-md lg:w-[100%] 3xl:w-full  md:w-[250px]  lg:h-[25vh] xl:h-[30vh] 3xl:h-[33vh] md:h-[177px] w-[250px] h-[120px] mx-auto`}>
+		} md:rounded-[20px] rounded-[12px] overflow-hidden shadow-md lg:w-[100%] 3xl:w-full  md:w-[250px]  lg:h-[25vh] xl:h-[30vh] 3xl:h-[33vh] 5xl:h-[40vh] md:h-[177px] w-[250px] h-[120px] mx-auto`}>
 		<Image
 			src={imageSrc}
 			alt={title}
@@ -127,7 +127,7 @@ const EcosystemCard = ({
 						</div>
 					)}
 					<p
-						className={` lg:text-[12px] xl:text-[16px]  text-[10px] font-agrandir pr-12 md:pr-0 mt-6 lg:mt-3 xl:mt-5  3xl:text-[22px] 3xl:mt-10  ${
+						className={` lg:text-[12px] xl:text-[16px]  text-[10px] font-agrandir pr-12 md:pr-0 mt-6 lg:mt-3 xl:mt-5  3xl:text-[22px] 3xl:mt-10   ${
 							title == "Artfi Share" ? "text-black" : "text-white"
 						}`}>
 						{description}
