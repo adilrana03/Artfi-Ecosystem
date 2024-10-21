@@ -23,6 +23,7 @@ const config: Config = {
         'agrandir': ['Agrandir', 'sans-serif'],
          'mulish': ['Mulish', 'sans-serif'],
          'irish-grover': ['"Irish Grover"', 'cursive'],
+        'ethereal': ['Ethereal', 'sans-serif'], // Added Ethereal font family
       },
     },
   },

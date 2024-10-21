@@ -40,7 +40,7 @@ const EcosystemCard = ({
 		<div
 			className={`relative ${
 				title == "Artfi Share" ? "bg-[#D7D0C4]" : "bg-black"
-			} md:rounded-[20px] rounded-[12px] overflow-hidden shadow-md lg:w-[100%] 3xl:w-full  md:w-[250px]  lg:h-[25vh] xl:h-[28vh] 3xl:h-[33vh] 5xl:h-[40vh] md:h-[177px] w-[250px] h-[120px] mx-auto`}>
+			} md:rounded-[20px] rounded-[12px] overflow-hidden shadow-md lg:w-[100%] 3xl:w-[100%]  md:w-[250px]  lg:h-[25vh] xl:h-[28vh] 3xl:h-[30vh] 5xl:h-[40vh] md:h-[177px] w-[250px] h-[120px] mx-auto `}>
 			<Image
 				src={imageSrc}
 				alt={title}
@@ -107,7 +107,7 @@ const EcosystemCard = ({
 							</div>
 						</div>
 						<div className='3xl:absolute bottom-14 xl:-mt-0 '>
-							<h3 className='text-white  xl:text-[30px] md:text-[20px] text-[12px] font-bold lg:mt-2 xl:mt-6 font-irish-grove 3xl:text-[22px] 3xl:mt-[10%] 4k:text-[50px] 4xl:text-[30px]'>
+							<h3 className='text-white  xl:text-[30px] md:text-[20px] text-[12px] font-bold lg:mt-2 xl:mt-6 font-ethereal 3xl:text-[22px] 3xl:mt-[10%] 4k:text-[50px] 4xl:text-[30px]'>
 								THE ART CARD
 							</h3>
 							<div>
@@ -162,7 +162,7 @@ const EcosystemCard = ({
 									{description}
 								</p> */}
 							</div>
-							<div className='mt-4 xl:mt-4 lg:mt-2 hidden md:block  '>
+							<div className='mt-4 xl:mt-2 lg:mt-2 hidden md:block  '>
 								<Image
 									src={masterCard}
 									alt={logo}
@@ -372,7 +372,7 @@ const EcosystemMap = () => {
 					</h2>
 				</div>
 
-				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:-[80% md:w-[500px] 3xl:w-[80%] lg:w-full md:mx-auto pb-8 md:pb-0'>
+				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:-[80% md:w-[500px] 3xl:w-full lg:w-full md:mx-auto pb-8 md:pb-0'>
 					{cards.map((card, index) => (
 						<EcosystemCard
 							key={card.title}
