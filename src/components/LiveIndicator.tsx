@@ -39,15 +39,7 @@ const LiveIndicator = () => {
 						opacity: 1;
 					}
 				}
-				.live-indicator {
-					animation: pulse 2s infinite;
-				}
-				.outer-circle {
-					animation: pulse 1s infinite;
-				}
-				.inner-circle {
-					animation: pulse 2s infinite 0.2s;
-				}
+				
 			`}</style>
 		</svg>
 	);

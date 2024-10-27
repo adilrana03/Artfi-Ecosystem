@@ -12,7 +12,7 @@ import logo from "../assets/Artfi Logo (3).svg";
 import artinallogo from "../assets/ArtinalsLogo.svg";
 import sharelogo from "../assets/Artfishare.svg";
 import curatedlogo from "../assets/Curated.svg";
-import marketplacelogo from "../assets/Artfimarketplace.svg";
+import marketplacelogo from "../assets/ArtfiShareMarket.svg";
 import connectLogo from "../assets/ArtfiConnect.svg";
 import foundationLogo from "../assets/ArtfiFoundation.svg";
 import tokenLogo from "../assets/Artfi Logo (2).svg";
@@ -40,7 +40,7 @@ const EcosystemCard = ({
 		<div
 			className={`relative ${
 				title == "Artfi Share" ? "bg-[#D7D0C4]" : "bg-black"
-			} md:rounded-[20px] rounded-[12px] overflow-hidden shadow-md lg:w-[100%] 3xl:w-[100%]  md:w-[250px]  lg:h-[25vh] xl:h-[28vh] 3xl:h-[30vh] 5xl:h-[40vh] md:h-[177px] w-[250px] h-[120px] mx-auto `}>
+			} md:rounded-[20px] rounded-[12px] overflow-hidden shadow-md lg:w-[100%] 3xl:w-[100%]  md:w-[250px]  lg:h-[25vh] xl:h-[28vh] 3xl:h-[30vh] 5xl:h-[40vh] md:h-[177px] w-[280px] h-[120px] mx-auto `}>
 			<Image
 				src={imageSrc}
 				alt={title}
@@ -57,10 +57,10 @@ const EcosystemCard = ({
 							<Image
 								src={logo}
 								alt='logo'
-								className='md:w-[50%]  lg:w-auto 3xl:w-[50%] w-[40%]'
+								className='md:w-[40%]  lg:w-auto 3xl:w-[35%] w-[40%]'
 							/>
 
-							<div className='flex items-center  justify-between'>
+							<div className='md:flex items-center hidden justify-between'>
 								<svg
 									className='lg:w-[70px] md:w-[60px] lg:h-[44px] md:h-[35px] w-[40px] h-[25px]'
 									xmlns='http://www.w3.org/2000/svg'
@@ -99,24 +99,17 @@ const EcosystemCard = ({
 										fill='white'
 									/>
 								</svg>
-								<Image
-									src={masterCard}
-									alt={logo}
-									className='w-[40%] md:hidden'
-								/>
 							</div>
 						</div>
-						<div className='3xl:absolute bottom-14 xl:-mt-0 '>
-							<h3 className='text-white  xl:text-[30px] md:text-[20px] text-[12px] font-bold lg:mt-2 xl:mt-6 font-ethereal 3xl:text-[22px] 3xl:mt-[10%] 4k:text-[50px] 4xl:text-[30px]'>
+						<div className='3xl:absolute bottom-20 xl:-mt-0 '>
+							<h3 className='text-white text-[20px]  xl:text-[30px] md:text-[20px] font-bold lg:mt-2 xl:mt-3 font-ethereal  3xl:text-[36px] 3xl:mt-[10%] 4k:text-[50px] 4xl:text-[30px]'>
 								THE ART CARD
 							</h3>
+							<h1 className='lg:text-[12px] xl:text-[16px]  text-[10px] font-agrandir text-white  3xl:text-[28px] 4k:text-[50px] 4xl:text-[30px]'>
+								The Art of Spending
+							</h1>
 							<div>
-								<div className='flex items-center justify-between w-[40%] mt-4 md:hidden'>
-									<Image
-										src={masterCard}
-										alt={logo}
-										className='w-[40%]'
-									/>
+								<div className='flex absolute bottom-4 right-0 items-center justify-between w-[40%] mt-4 md:hidden'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
 										width='29'
@@ -157,18 +150,15 @@ const EcosystemCard = ({
 										/>
 									</svg>
 								</div>
-
-								{/* <p className='text-white lg:text-[16px] hidden  text-[10px] font-light'>
-									{description}
-								</p> */}
 							</div>
-							<div className='mt-4 xl:mt-2 lg:mt-2 hidden md:block  '>
+
+							{/* <div className='mt-4 xl:mt-2 lg:mt-2 hidden md:block  '>
 								<Image
 									src={masterCard}
 									alt={logo}
 									className='w-[20%] -mt-3 lg:-mt-0'
 								/>
-							</div>
+							</div> */}
 						</div>
 						<div className='flex justify-between items-center absolute md:bottom-2 md:right-auto md:top-auto top-2 right-2'>
 							<span
@@ -209,10 +199,10 @@ const EcosystemCard = ({
 								<Image
 									src={logo}
 									alt='logo'
-									className={` md:w-[50%]  lg:w-auto 3xl:w-[50%] 3xl:m-4 ${
+									className={`   lg:w-auto 3xl:w-[35%] 3xl:m-4 ${
 										title == "Artfi Token"
-											? "w-[30%]"
-											: "w-[40%]"
+											? "w-[30%] md:w-[40%] "
+											: "w-[40%] md:w-[50%]"
 									}  `}
 								/>
 								<h1 className='font-semibold text-white lg:text-[32px] '>
@@ -221,7 +211,7 @@ const EcosystemCard = ({
 							</div>
 						)}
 						<p
-							className={` lg:text-[12px] xl:text-[16px]  text-[10px] font-agrandir pr-12 md:pr-0 mt-6 lg:mt-3 xl:mt-5  3xl:text-[22px] 3xl:mt-[10%] 4k:text-[50px] 4xl:text-[30px]   ${
+							className={` lg:text-[12px] xl:text-[16px]  text-[10px] font-agrandir pr-12 md:pr-0 mt-2 lg:mt-3 xl:mt-5 2xl:mt-10 2xl:text-[20px] 3xl:text-[22px] 3xl:mt-[6%] 4k:text-[50px] 4xl:text-[30px]   ${
 								title == "Artfi Share"
 									? "text-black"
 									: "text-white"
@@ -296,7 +286,8 @@ const EcosystemMap = () => {
 		},
 		{
 			title: "Curated",
-			description: "Modern & Contemporary Fine Art Auction!",
+			description:
+				"Single Ownership through Modern & Contemporary Art Auction on Blockchain ! ",
 			imageSrc: artficurated,
 			logo: curatedlogo,
 			status: "Coming soon",
@@ -304,7 +295,8 @@ const EcosystemMap = () => {
 		},
 		{
 			title: "Marketplace",
-			description: "Trade your art share exclusively on Artfi Market!",
+			description:
+				"Trade your art share exclusively on Artfi ShareMarket! ",
 			imageSrc: marketPlace,
 			logo: marketplacelogo,
 			status: "Coming soon",
@@ -312,7 +304,7 @@ const EcosystemMap = () => {
 		},
 		{
 			title: "Artfi connect",
-			description: "Connecting the Art-world through Blockchain!",
+			description: "CoinMarketCap of Art! ",
 			imageSrc: connect,
 			logo: connectLogo,
 			status: "Coming soon",
@@ -328,7 +320,7 @@ const EcosystemMap = () => {
 		},
 		{
 			title: "Artfi Token",
-			description: "$ARTFI",
+			description: "Ecosystem Economy ",
 			imageSrc: token,
 			logo: tokenLogo,
 			status: "Live",
