@@ -274,7 +274,7 @@ const EcosystemMap = () => {
 			imageSrc: artinals,
 			logo: artinallogo,
 			status: "Live",
-			link: "https://artinals.vercel.app/",
+			link: "https://artinals.com/",
 		},
 		{
 			title: "Artfi Share",
@@ -282,7 +282,7 @@ const EcosystemMap = () => {
 			imageSrc: share,
 			logo: sharelogo,
 			status: "Live",
-			link: "https://artfiprimary.vercel.app/",
+			link: "https://artfishare.com",
 		},
 		{
 			title: "Curated",
