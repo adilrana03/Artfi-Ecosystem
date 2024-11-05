@@ -11,7 +11,7 @@ import connect from "../assets/image 39.png";
 import logo from "../assets/Artfi Logo (3).svg";
 import artinallogo from "../assets/ArtinalsLogo.svg";
 import sharelogo from "../assets/Artfishare.svg";
-import curatedlogo from "../assets/Curated.svg";
+import curatedlogo from "../assets/ArtfiCurated.png";
 import marketplacelogo from "../assets/ArtfiShareMarket.svg";
 import connectLogo from "../assets/ArtfiConnect.svg";
 import foundationLogo from "../assets/ArtfiFoundation.svg";
@@ -57,7 +57,7 @@ const EcosystemCard = ({
 							<Image
 								src={logo}
 								alt='logo'
-								className='md:w-[40%]  lg:w-auto 3xl:w-[35%] w-[40%]'
+								className='md:w-[40%]  lg:w-auto 3xl:w-[35%] w-[30%]'
 							/>
 
 							<div className='md:flex items-center hidden justify-between'>
@@ -199,9 +199,11 @@ const EcosystemCard = ({
 								<Image
 									src={logo}
 									alt='logo'
-									className={`   lg:w-auto 3xl:w-[35%] 3xl:m-4 ${
+									className={`lg:w-auto 3xl:w-[35%] 3xl:m-4 ${
 										title == "Artfi Token"
 											? "w-[30%] md:w-[40%] "
+											: title == "Curated"
+											? "w-[30%] md:w-[40%] lg:w-[45%]"
 											: "w-[40%] md:w-[50%]"
 									}  `}
 								/>
