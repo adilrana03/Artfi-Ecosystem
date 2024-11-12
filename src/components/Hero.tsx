@@ -302,7 +302,8 @@ const EcosystemMap = () => {
 			imageSrc: marketPlace,
 			logo: marketplacelogo,
 			status: "Coming soon",
-			link: "https://artfisecondary.vercel.app/",
+			link: "",
+			// link: "https://artfisecondary.vercel.app/",
 		},
 		{
 			title: "Artfi connect",
@@ -310,7 +311,8 @@ const EcosystemMap = () => {
 			imageSrc: connect,
 			logo: connectLogo,
 			status: "Coming soon",
-			link: "https://artfi-connect.vercel.app/",
+			link: "",
+			// link: "https://artfi-connect.vercel.app/",
 		},
 		{
 			title: "Artfi Foundation",
